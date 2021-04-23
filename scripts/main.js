@@ -1,5 +1,5 @@
 import { BusinessList } from "./BusinessList.js"
 
-const contentTarget = document.querySelector("#main")
+const businessContainer = document.getElementById("businesses")
 
-BusinessList()
+businessContainer.innerHTML = BusinessList()
