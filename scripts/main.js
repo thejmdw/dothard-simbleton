@@ -1,5 +1,10 @@
-import { BusinessList } from "./BusinessList.js"
+import { BusinessList, ManufacturingBusinessList, NewYorkBusinessList } from "./BusinessList.js"
 
-const businessContainer = document.getElementById("businesses")
+const businessesContainer = document.getElementById("businesses")
+const newYorkBusinessesContainer = document.getElementById("businesses--newYork")
+const manufacturingBusinessContainer = document.getElementById("businesses--manufacturing")
 
-businessContainer.innerHTML = BusinessList()
+
+businessesContainer.innerHTML = BusinessList()
+newYorkBusinessesContainer.innerHTML = NewYorkBusinessList()
+manufacturingBusinessContainer.innerHTML = ManufacturingBusinessList()

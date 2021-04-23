@@ -28,3 +28,43 @@ export const BusinessList = () => {
 
   return businessHTML
 }
+
+export const NewYorkBusinessList = () => {
+  const businesses = getBusinesses()
+  const isNewYorkBusiness = (businessObject) => {
+    if (businessObject.addressStateCode === "NY") {
+      return true
+    }
+    return false
+  }
+  let newYorkBusinessHTML = "<h1>New York Businesses</h1>"
+
+  const filteredNewYorkBusinesses = businesses.filter( isNewYorkBusiness )
+  
+  filteredNewYorkBusinesses.forEach(
+    (businessObject) => {
+      newYorkBusinessHTML += Business(businessObject)
+    }
+  );
+  return newYorkBusinessHTML
+}
+
+export const ManufacturingBusinessList = () => {
+  const businesses =getBusinesses() 
+  const isManufacturingBusiness = (businessObject) => {
+    if (businessObject.companyIndustry === "Manufacturing") {
+      return true
+    }
+    return false
+  }
+  let manufacturingBusinessHTML = "<h1>Manufacturing Businesses</h1>"
+
+  const filteredManufacturingBusinesses = businesses.filter( isManufacturingBusiness) 
+    
+  filteredManufacturingBusinesses.forEach(
+    (businessObject) => {
+      manufacturingBusinessHTML += Business(businessObject)
+    }
+  );
+  return manufacturingBusinessHTML
+}

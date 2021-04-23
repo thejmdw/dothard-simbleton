@@ -109,7 +109,7 @@ const database = {
       addressCity: "Dennisville"
     },
     {
-      id: 10 ,
+      id: 10,
       purchasingAgent: { nameLast: "Torphy", nameFirst: "Celia" },
       phoneWork: "(992) 079-1670 x71569",
       orders: [7431.21, 5911.85, 7954.86, 7141.52, 8416.79],
