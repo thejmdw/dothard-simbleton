@@ -25,14 +25,14 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Business Styles 
 ---------------------------------------------*/
-.business {
+.business, .agent {
   border-bottom: 1px solid black;
 }
 
-.business__address > p{
+.business__address > p, .agent__info > p {
   margin: 0;
 }
 
-.business__name {
+.business__name, .agent__name {
   margin-bottom: 0;
 }
