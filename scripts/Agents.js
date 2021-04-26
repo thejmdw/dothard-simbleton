@@ -1,13 +1,13 @@
 import { getBusinesses } from "./database.js"
+import "./BusinessSearch.js"
 
-let agents = null
+let  agents = null
 
 const Agents = () => {
   const businesses = getBusinesses()
-
-
   let newId = 0
-    agents = businesses.map(business => {
+
+  agents = businesses.map(business => {
     const agentFullName = `${business.purchasingAgent.nameFirst} ${business.purchasingAgent.nameLast}`
     const agentCompany = business.companyName
     const agentPhone = business.phoneWork

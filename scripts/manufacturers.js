@@ -1,7 +1,7 @@
 import { ManufacturingBusinessList } from "./ManufacturingBusinessList.js"
+import "./BusinessSearch.js"
 
-
-const manufacturingBusinessContainer = document.getElementById("businesses--manufacturing")
+const manufacturingBusinessContainer = document.getElementById("main")
 
 
 
